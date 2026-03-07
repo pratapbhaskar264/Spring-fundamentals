@@ -13,14 +13,17 @@ public class BasicsApplication implements CommandLineRunner {
 //    private greet greet1;
 
 
-	private final greet greet1;
+//	private final greet greet1;
+
+	@Autowired
+	private PaymentGateway paymentGateway;
 
 	//tight coupling with constructor dependency injection
 	// its more practised beacuse we can make it tightly coupled and final reference variable allows us to
 	// keep things intact and less messy and more professional
-    public BasicsApplication(greet greet1) {
-        this.greet1 = greet1;
-    }
+//    public BasicsApplication(greet greet1) {
+//        this.greet1 = greet1;
+//    }
 
     public static void main(String[] args) {
 		ApplicationContext context =
@@ -30,6 +33,7 @@ public class BasicsApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		greet1.Greet();
+//		greet1.Greet();
+		paymentGateway.pay();
 	}
 }
