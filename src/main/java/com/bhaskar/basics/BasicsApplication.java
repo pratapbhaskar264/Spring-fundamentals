@@ -34,6 +34,9 @@ public class BasicsApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 //		greet1.Greet();
-		paymentGateway.pay();
+		paymentGateway.pay(); // error occured because both classes implementing that interface are decalarred
+		// as component so spring has beans of both the clasees and it is unable to decide the class whose bean
+		// it should provide so we will have to remove @component from any of the class implementing the Payment gateway Interface
+
 	}
 }
