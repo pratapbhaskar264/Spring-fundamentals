@@ -16,6 +16,8 @@ public class BasicsApplication implements CommandLineRunner {
 	private final greet greet1;
 
 	//tight coupling with constructor dependency injection
+	// its more practised beacuse we can make it tightly coupled and final reference variable allows us to
+	// keep things intact and less messy and more professional
     public BasicsApplication(greet greet1) {
         this.greet1 = greet1;
     }
