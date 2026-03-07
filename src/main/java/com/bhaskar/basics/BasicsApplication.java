@@ -9,10 +9,18 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class BasicsApplication implements CommandLineRunner {
 
-	@Autowired // loose coupling
-    private greet greet1;
+//	@Autowired // loose coupling
+//    private greet greet1;
 
-	public static void main(String[] args) {
+
+	private final greet greet1;
+
+	//tight coupling with constructor dependency injection
+    public BasicsApplication(greet greet1) {
+        this.greet1 = greet1;
+    }
+
+    public static void main(String[] args) {
 		ApplicationContext context =
 				SpringApplication.run(BasicsApplication.class, args);
 	}
