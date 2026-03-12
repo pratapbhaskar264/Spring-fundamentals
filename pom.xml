@@ -46,7 +46,8 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId> // responsible for jar packaging
+				<artifactId>spring-boot-maven-plugin</artifactId>
+<!--				// responsible for jar packaging-->
 			</plugin>
 		</plugins>
 	</build>
