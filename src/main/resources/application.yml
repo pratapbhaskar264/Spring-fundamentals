@@ -1,0 +1,6 @@
+spring :
+  application :
+    name : basics
+
+server:
+  port: 8082
