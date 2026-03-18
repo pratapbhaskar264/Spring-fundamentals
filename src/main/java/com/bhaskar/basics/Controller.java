@@ -23,6 +23,7 @@ public class Controller {
             return result;
         } catch(Exception e) {
             log.error("0 nhi beta");
+            log.debug("not 0");
             return 0;
         }
     }
