@@ -1,0 +1,28 @@
+<!--it is responsible for customization in error printing-->
+<configuration>
+
+    <appender name ="myConsoleAppender" class = "ch.qos.logback.core.ConsoleAppender" >
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name = "myFileAppender" class = "ch.qos.logback.core.FileAppender">
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+        <file>
+        basics.log
+   </file>
+    </appender>
+
+<!--    logs of root folder will be printed for info or more severity and for both appenders -->
+    <root level = "INFO">
+    <appender-ref ref = "myConsoleAppender" />
+    <appender-ref ref = "myFileAppender" />
+    </root>
+</configuration>

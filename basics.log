@@ -1,0 +1,16 @@
+09:08:54.733 [main] INFO  c.bhaskar.basics.BasicsApplication - Starting BasicsApplication using Java 23 with PID 6316 (C:\Users\prata\Desktop\springBoot-basics\basics\target\classes started by prata in C:\Users\prata\Desktop\springBoot-basics\basics)
+09:08:54.741 [main] DEBUG c.bhaskar.basics.BasicsApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+09:08:54.743 [main] INFO  c.bhaskar.basics.BasicsApplication - No active profile set, falling back to 1 default profile: "default"
+09:08:56.225 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+09:08:56.242 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+09:08:56.246 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:08:56.246 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+09:08:56.319 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1414 ms
+09:08:56.878 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+09:08:56.912 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+09:08:56.920 [main] INFO  c.bhaskar.basics.BasicsApplication - Started BasicsApplication in 2.925 seconds (process running for 3.845)
+09:09:16.606 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:09:16.606 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:09:16.608 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+09:09:16.693 [http-nio-8081-exec-1] ERROR com.bhaskar.basics.Controller - 0 nhi beta
+09:09:16.694 [http-nio-8081-exec-1] DEBUG com.bhaskar.basics.Controller - not 0
